@@ -34,8 +34,5 @@
 		"markdownlint-cli": "^0.34.0",
 		"misc-utils-of-mine-typescript": "0.0.12",
 		"prettier": "^2.8.8"
-	},
-	"dependencies": {
-		"study-lenses": "^0.0.179"
 	}
 }
