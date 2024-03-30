@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 /* Calculator
 
@@ -8,45 +8,50 @@
 
 // --- save important DON elements to variables ---
 
-const leftNumberEl = _;
-const rightNumberEl = _;
+const leftNumberEl = document.getElementById('left').value;
+const rightNumberEl = document.getElementById('right').value;
 
-const addButton = _;
-const subtractButton = _;
-const multiplyButton = _;
-const divideButton = _;
+const addButton = document.getElementById('add');
+const subtractButton = document.getElementById("subtract");
+const multiplyButton = document.getElementById("multiply");
+const divideButton = document.getElementById("divide");
 
-const displayEl = _;
+const displayEl = document.getElementById('display-actual');
 
 // --- add event listeners + handlers ---
 
 addButton.addEventListener('click', () => {
-	const leftNum = Number(_._);
-	const rightNum = _(_._);
+	const leftNum = Number(leftNumberEl);
+	const rightNum = Number(rightNumberEl);
 
 	const sum = leftNum + rightNum;
 
-	_._ = `${leftNum} + ${rightNum} = ${sum}`;
+	displayEl.innerHTML = `${leftNum} + ${rightNum} = ${sum}`;
 });
 
-_.addEventListener('click', () => {
-	const leftNum = _(_);
-	const rightNum = _(_);
+subtractButton.addEventListener('click', () => {
+		const leftNum = Number(leftNumberEl);
+	const rightNum = Number(rightNumberEl);
 
-	const difference = _;
+	const sum = leftNum - rightNum;
 
-	_._ = `${_} - ${_} = ${_}`;
+	displayEl.innerHTML = `${leftNum} - ${rightNum} = ${sum}`;
 });
 
-multiplyButton._('_', () => {
-	const leftNum = _;
-	const rightNum = _;
+multiplyButton.addEventListener('click', () => {
+	const leftNum = Number(leftNumberEl);
+	const rightNum = Number(rightNumberEl);
 
-	const product = _;
+	const sum = leftNum * rightNum;
 
-	_ = _;
+	displayEl.innerHTML = `${leftNum} * ${rightNum} = ${sum}`;
 });
 
-_._(_, () => {
-	/* write this whole thing */
+divideButton.addEventListener('click', () => {
+	const leftNum = Number(leftNumberEl);
+	const rightNum = Number(rightNumberEl);
+
+	const sum = leftNum / rightNum;
+
+	displayEl.innerHTML = `${leftNum} / ${rightNum} = ${sum}`;
 });
