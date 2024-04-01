@@ -37,6 +37,7 @@ understand and test.
 - _Small Groups_: Work on the exercises from `./1-primitives`
   - Try making small changes and seeing what happens!
 - _All Together_: Recap! Each group quickly presents
+
   - what was hard
   - what went well
   - lessons learned

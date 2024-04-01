@@ -57,6 +57,7 @@ To prepare for the group project you can:
     debugger?
   - How is the user's data processed? Is it stored between interactions?
 - _Small Groups_: Continue studying the example programs.
+
   - Try making small changes and seeing what happens!
 
 - _All Together_: Read through the
